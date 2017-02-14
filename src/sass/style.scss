@@ -88,7 +88,7 @@ div p {
     background-color: #f4645f;
     color: white;
     text-transform: uppercase;
-    padding: 2px 4px;
+    padding: 0.1em 0.2em;
 	transition: .2s;
 }
 .intro a:hover {
@@ -106,6 +106,7 @@ div p {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    text-align: right;
     font-family: "Miriam Libre", sans-serif;
     color: #f4645f;
     background: url("img/bg.jpg");
@@ -126,7 +127,7 @@ div p {
     margin-bottom: 2em;
     transition: 0.2s ease;
     margin: auto;
-    margin-top: 34px;
+    margin-top: 3.4em;
 }
 .preamble:hover {
     box-shadow: 0 2px 7px rgba(0,0,0,.2);
@@ -142,7 +143,7 @@ div p {
 /* 	MAIN 	*/
 /************/
 .main {
-    padding: 34px 0px 0px;
+    padding: 3.4em 0px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -150,10 +151,17 @@ div p {
 .main div {
     border: 2px solid #e5e5e5;
     padding: 1em;
-    display: inline-block;
     margin-bottom: 2em;
     transition: 0.2s ease;
     width: 27%;
+    @media screen and (max-width: 1392px) {
+        flex-basis: 66%;
+        margin: auto;
+        margin-bottom: 1.6em;
+    }
+    @media screen and (max-width: 590px) {
+        flex-basis: 90%;
+    }
 }
 .main div:hover {
     box-shadow: 0 2px 7px rgba(0,0,0,.2);
@@ -164,9 +172,6 @@ div p {
     font-size: 3.33em;
     font-family: "Miriam Libre", sans-serif;
     color: #f4645f;
-}
-.main div p{
-    //margin-bottom: 0.3em;
 }
 .benefits {
 	margin-right: 95px;
@@ -185,23 +190,41 @@ div p {
     bottom: -3.9em;
     text-align: center;
     font-size: 2.618em;
+    @media screen and (max-width: 815px) {
+        bottom: -4.4em;
+    }
 }
 /************/
 /* 	FOOTER 	*/
 /************/
 footer {
 	margin-top: 1.6em;
-	padding: 34px;
+	padding: 0.5666666666666667em;
 	font-size: 6em;
-    bottom: 0px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     background: url("img/bg.jpg");
 	font-family: "FontAwesome";
+    @media screen and (max-width: 980px) {
+        font-size: 4em;
+        margin-top: 2.3em;
+    }
+    @media screen and (max-width: 620px) {
+        font-size: 3em;
+        margin-top: 3.1em;
+    }
+    @media screen and (max-width: 475px) {
+        flex-direction: column;
+        align-content: center;
+        font-size: 8em;
+        margin-top: 1.2em;
+        align-items: center;
+    }
 }
 footer a {
 	transition: .2s;
+    width: 1em;
 }
 footer a:hover {
 	color: white;
