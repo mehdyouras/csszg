@@ -1,10 +1,8 @@
 var gulp = require("gulp"),
     image = require("gulp-image"),
-    pug = require("gulp-pug"),
     sass = require("gulp-sass"),
     autoprefixer = require("gulp-autoprefixer"),
-    csso = require("gulp-csso"),
-    babel = require("gulp-babel");
+    csso = require("gulp-csso");
 
 // --- Task for images
 gulp.task("images", function() {
