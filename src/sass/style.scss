@@ -83,7 +83,6 @@ div p {
 .intro {
     display: flex;
     flex-direction: column;
-    order: -1;
 }
 .intro a {
     background-color: #f4645f;
@@ -93,7 +92,7 @@ div p {
 	transition: .2s;
 }
 .intro a:hover {
-	background: white;
+	background: #fafafa;
 	color: #f4645f;
 }
 .intro a::before {
@@ -176,22 +175,22 @@ div p {
     flex-basis: 66%;
     position: relative;
 	margin: auto;
+    position: relative;
 }
 .explanation {
 	margin-left: 95px;
 }
 .requirements p:last-of-type {
     position: absolute;
-    top: 385px;
+    bottom: -3.9em;
     text-align: center;
-    width: 100%;
     font-size: 2.618em;
 }
 /************/
 /* 	FOOTER 	*/
 /************/
 footer {
-	margin-top: 34px;
+	margin-top: 1.6em;
 	padding: 34px;
 	font-size: 6em;
     bottom: 0px;
@@ -234,18 +233,47 @@ footer a:hover {
 /* 	ASIDE 	*/
 /************/
 aside {
-	order: -1;
-	display: flex;
-	justify-content: center;
+
 	font-size: 1.7em;
 	line-height: 1.4;
-}
-.design-selection {
-	//display: flex;
-	//width: 60%;
+    background: #fafafa;
+    .wrapper {
+            display: flex;
+            justify-content: space-around;
+            width: 70%;
+            padding-top: 1em;
+            margin: auto;
+            h3 {
+                font-size: 3.33em;
+                font-family: "Miriam Libre", sans-serif;
+                color: #f4645f;
+            }
+            .design-archives nav {
+                background: #f4645f;
+                padding: 0.2em;
+                text-align: center;
+                li.next a::after {
+                        font-family: "FontAwesome";
+                        content:"\f0a9";
+                        vertical-align: text-top;
+                        margin-left: -0.3167420814479638em;
+                    }
+                a {
+                    color: white;
+                    font-size: 1.3em;
+                    span {
+                        visibility: hidden;
+                    }
+                }
+            }
+            @media screen and (max-width: 1440px) {
+                flex-direction: column;
+            }
+    }
+    
 }
 .design-selection li {
-	display: inline-block;
+	margin-bottom: 0.8em;
 }
 .design-selection a {
     background-color: #f4645f;
@@ -255,6 +283,6 @@ aside {
 	transition: .2s;
 }
 .design-selection a:hover {
-	background: white;
+	background: #fafafa;
 	color: #f4645f;
 }
