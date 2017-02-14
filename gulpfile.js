@@ -8,7 +8,7 @@ var gulp = require("gulp"),
 gulp.task("images", function() {
     gulp.src("src/img/**", !"src/img/*.db")
         .pipe(image())
-        .pipe(gulp.dest("/img"));
+        .pipe(gulp.dest("img"));
 } );
 // --- Task for styles
 gulp.task("css", function() {
