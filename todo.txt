@@ -1,0 +1,7 @@
+Régler problèmes polices;
+Longueur de ligne;
+Contrastes couleurs;
+Aérer le header;
+hauteur de ligne titre;
+goutière;
+header background toutes la page;
